@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ![image](https://github.com/pratyushdev-codes/NewsPulse/assets/109750976/3fa44044-7411-4af2-b281-fa8fa12f961b)
 ![image](https://github.com/pratyushdev-codes/NewsPulse/assets/109750976/d9cc471d-62c7-4807-a6c9-aa12b6b8a12f)
 ![image](https://github.com/pratyushdev-codes/NewsPulse/assets/109750976/4af44d95-66e1-4416-a55e-cf3d2e1d87b5)
@@ -11,4 +11,4 @@
 =======
 # GpShup.AIClub
 Weekly Tech Podcast
->>>>>>> 236e0956ee09a1e5caec874636dcefc903a813dc
+
