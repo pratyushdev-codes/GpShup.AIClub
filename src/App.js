@@ -1,39 +1,41 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Header from './Components/Header';
-import Coins from './Pages/CoinsPage'
-import Homepage from './Pages/Homepage';
-import { makeStyles } from 'tss-react/mui';
-import Carousel from './Components/Banner/Carousel';
-import CoinsTable from './Components/CoinsTable';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./Components/Header";
+import Coins from "./Pages/CoinsPage";
+import Homepage from "./Pages/Homepage";
+import { makeStyles } from "tss-react/mui";
+import Carousel from "./Components/Banner/Carousel";
+import CoinsTable from "./Components/CoinsTable";
+import Navbar from "./Components/Navbar";
+
 function App() {
   const useStyles = makeStyles()(() => ({
     App: {
       backgroundColor: "black",
       color: "white",
       minHeight: "100vh",
-    }
+    },
   }));
 
   const { classes } = useStyles();
   return (
     <BrowserRouter>
       <div className={classes.App}>
+        <Navbar />
         <Header />
         <Routes>
-        <Route path='/' element={<Homepage/>} exact />
-        <Route path='/coins/:id' element={<Coins/>}/>
+          <Route path="/" element={<Homepage />} exact />
+          <Route path="/coins/:id" element={<Coins />} />
         </Routes>
-        
-         <br/>
-         <br/>
-         <br/>
-        <Carousel/>
-        <br/>
-        <br/>
-        <CoinsTable/>
+
+        <br />
+        <br />
+        <br />
+        <Carousel />
+        <br />
+        <br />
+        <CoinsTable />
       </div>
-      
     </BrowserRouter>
   );
 }
